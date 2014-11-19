@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Synesthesia Reading</title>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<link href="style.css" rel="StyleSheet" type="text/css">
+<script src="jquery-1.11.1.min.js"></script>
+<script src="coloring.scripts.js"></script>
+<script src="file.io.scripts.js"></script>
+<script>
+  $(document).ready(function() {
+
+      $("#readFiles").click(function() {
+          readFileContent();
+      });
+
+      $("#toLeft").click(function() {
+          $("#byte_content").css("text-align", "left");
+      });
+
+
+      $("#toMiddle").click(function() {
+          $("#byte_content").css("text-align", "center");
+      });
+    });
+</script>
+</head>
+<body>
+
+<input type="file" id="files" name="file" />
+<button id="readFiles">Wiew text colorfull</button>
+<div>
+  <button id="toLeft">To left</button>
+  <button id="toMiddle">To center</button>
+<div>
+<div id="byte_content">
+  Insert file.
+</div>
+  
+</body>
+</html>
