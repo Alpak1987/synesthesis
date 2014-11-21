@@ -3,7 +3,7 @@ function ColorTheText(text) {
 
       for (var x = 0; x < text.length; x++)
       {
-        var letter = text.charAt(x);
+        var letter = text[x];
 
         if (letter == " ") {
           colouredText = colouredText.concat("&nbsp;");
@@ -11,10 +11,13 @@ function ColorTheText(text) {
           colouredText = colouredText.concat( "<br>\n");
         } else if (letter != "\r\n") {
             var isNumeric = /[0-9]/.test(letter);
-            var isSmallLetter = letter.match(/[a-z]/);
+            var isSmallLetter = letter.match(/[a-ząćęłńóśżź]/);
 
-            if (letter.match(/[A-Za-z0-9]/)) {
+            if (letter.match(/[A-Za-zĄĆĘŁŃÓŚŻŹąćęłńóśżź0-9]/)) {
               colouredText = colouredText.concat("<span class=" + (isNumeric ? "n" + letter : letter + (isSmallLetter ? "l" : "u")) + ">" + letter +"</span>");
+            }
+            else{
+              colouredText += letter;
             }
         }
       }

@@ -2,10 +2,11 @@ body {
   /* background-color: #000; */
   font-family: Times New Roman, Georgia, serif;
   font-size: 20px;
+  background: floralwhite;
 }
 
 .wrapping_div {
-  word-wrap: break-word;
+  /*word-wrap: break-word;*/
   width:700px;
   margin: 25px 5px 25px 40px;
 }
@@ -28,10 +29,13 @@ nice brown-gray a97173
 formerly i a84a5c
 */
 .al, .Au, #al, #Au { color: #ffcd03; }
+.ąl, .Ąu, #ąl, #Ąu { color: #aacd13; }
 .bl, .Bu, #bl, #Bu { color: #0046c6; }
 .cl, .Cu, #cl, #Cu { color: #66029f; }
+.ćl, .Ću, #ćl, #Ću { color: #88029f; }
 .dl, .Du, #dl, #Du { color: #d00016; }
 .el, .Eu, #el, #Eu { color: #e7a800; }
+.ęl, .Ęu, #ęl, #Ęu { color: #e7a800; }
 .fl, .Fu, #fl, #Fu { color: #5f4978; }
 .gl, .Gu, #gl, #Gu { color: #037621; }
 .hl, .Hu, #hl, #Hu { color: #65340b; }
@@ -39,13 +43,17 @@ formerly i a84a5c
 .jl, .Ju, #jl, #Ju { color: #1ab153; }
 .kl, .Ku, #kl, #Ku { color: #9e0da7; }
 .ll, .Lu, #ll, #Lu { color: #77132f; }
+.łl, .Łu, #łl, #Łu { color: #aa132f; }
 .ml, .Mu, #ml, #Mu { color: #723305; }
 .nl, .Nu, #nl, #Nu { color: #5c4b78; }
+.ńl, .Ńu, #ńl, #Ńu { color: #ac4b78; }
 .ol, .Ou, #ol, #Ou { color: #cd641f; }
+.ól, .Óu, #ól, #Óu { color: #fd641f; }
 .pl, .Pu, #pl, #Pu { color: #4362a7; }
 .ql, .Qu, #ql, #Qu { color: #ae0253; }
 .rl, .Ru, #rl, #Ru { color: #943b3d; }
 .sl, .Su, #sl, #Su { color: #074664; }
+.śl, .Śu, #śl, #Śu { color: #074694; }
 .tl, .Tu, #tl, #Tu { color: #f10017; }
 .ul, .Uu, #ul, #Uu { color: #AD7460; }
 .vl, .Vu, #vl, #Vu { color: #1f4979; }
@@ -53,12 +61,14 @@ formerly i a84a5c
 .xl, .Xu, #xl, #Xu { color: #070c7c; }
 .yl, .Yu, #yl, #Yu { color: #077bbd; }
 .zl, .Zu, #zl, #Zu { color: #d4308d; }
+.żl, .Żu, #żl, #Żu { color: #dd308d; }
+.źl, .Źu, #źl, #Źu { color: #ff308d; }
 
 #byte_content {
 	margin: 25px 60px;
 	padding: 25px;
 	overflow-y: auto;
-	overflow-x: auto;
+	word-wrap: break-word;
 	border: 2px dotted gray;
 	text-align: left;
 }

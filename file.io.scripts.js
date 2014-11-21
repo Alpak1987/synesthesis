@@ -10,7 +10,7 @@
 
     var reader = new FileReader();
     var blob = file.slice(0, file.size);
-    reader.readAsBinaryString(blob);
+    reader.readAsText(blob,'UTF-8');
 
     reader.onloadend = function(evt) {
       if (evt.target.readyState == FileReader.DONE) { // DONE == 2
